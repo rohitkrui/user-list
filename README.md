@@ -1,27 +1,43 @@
-# UserListing
+# Angular User Listing App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+This is a simple Angular application that fetches and displays a list of users using an API. The app includes a search filter to allow users to search by name, and it's styled using Angular Material components.
 
-## Development server
+# Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ **Search by Name** (case-insensitive)
+ **Displays** Name, Email, Phone, Company Name
+ **Angular Material** UI with `mat-table`
+ **Loading Spinner** while data loads
+ **Error Handling** for failed requests
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech Stack
 
-## Build
+- Angular (latest stable)
+- Angular Material
+- RxJS
+- TypeScript
+- JSONPlaceholder API
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## API Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Folder Structure  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+src/
+├── app/
+│   ├── user-list/                 # UserListComponent files
+│   │   ├── user-list.component.ts
+│   │   ├── user-list.component.html
+│   │   ├── user-list.component.css
+│   ├── user.service.ts            # Service for API calls
+│   ├── app.component.ts
+│   ├── app.component.html
+│   ├── app-routing.module.ts
+│   ├── app.module.ts
+
+
